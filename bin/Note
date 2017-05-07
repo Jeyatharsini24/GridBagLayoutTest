@@ -1,0 +1,85 @@
+MyPanel2:
+
+gridBagLayout.columnWidths = new int[] {1350};
+gridBagLayout.rowHeights = new int[] {700};
+
+There is only one column and one row in main layout, that one column takes 1350 pixel and that one row takes 700 pixel.
+
+NORTH_WEST, NONE, weightx = 0
+
+place the button in north_west direction of that one cell, don't fill extra space for button. No changes when resize the panel
+(if fill = HORIZONTAL => fill horizontal extra space by width = available space * weightx
+if fill = VERTICAL => fill vertical extra space by height = available space * weighty)
+
+****************************************************************************************************************************
+
+MyPanel3:
+
+gridBagLayout.columnWidths = new int[] {100, 100, 100};
+gridBagLayout.rowHeights = new int[] {100, 100, 100};
+
+Divide the panel into three columns with 100, 100, 100 pixel and divide the panel into three rows with 100, 100, 100 pixel
+
+NORTH_WEST, BOTH, weightx = 0, gridx = 0, gridy = 0
+
+place the button in north_west direction of (0,0)th cell, fill that cell. Even though resize the panel no changes in button size
+
+****************************************************************************************************************************
+
+MyPanel4:
+
+gridBagLayout.columnWidths = new int[] {100, 100, 100};
+gridBagLayout.rowHeights = new int[] {100, 100, 100};
+
+Divide the panel into three columns with 100, 100, 100 pixel and divide the panel into three rows with 100, 100, 100 pixel
+
+NORTH_WEST, BOTH, weightx = 1, weighty = 0, gridx = 0, gridy = 0
+
+place the button in north_west direction of (0,0)th cell, fill that cell. When resize the panel cell's width will be increased
+to fill the panel's width (extra space).
+width of the cells in the same column are also resized according to that.
+
+****************************************************************************************************************************
+
+MyPanel5:
+
+gridBagLayout.columnWidths = new int[] {100, 100, 100};
+gridBagLayout.rowHeights = new int[] {100, 100, 100};
+
+Divide the panel into three columns with 100, 100, 100 pixel and divide the panel into three rows with 100, 100, 100 pixel
+
+NORTH_WEST, BOTH, weightx = 0, weighty = 1, gridx = 0, gridy = 0
+
+place the button in north_west direction of (0,0)th cell, fill that cell. When resize the panel cell's height will be increased
+to fill the panel's height (extra space).
+height of the cells in the same row are also resized according to that.
+
+****************************************************************************************************************************
+
+MyPanel6:
+
+gridBagLayout.columnWidths = new int[] {100, 100, 100};
+gridBagLayout.rowHeights = new int[] {100, 100, 100};
+
+Divide the panel into three columns with 100, 100, 100 pixel and divide the panel into three rows with 100, 100, 100 pixel
+
+NORTH_WEST, BOTH, weightx = 1, weighty = 1, gridx = 0, gridy = 0
+
+place the button in north_west direction of (0,0)th cell, fill that cell. When resize the panel cell's height and cell's width 
+will be increased to fill the panel's height and width(extra space).
+cells in the same row and cells in the same column are also resized according to that.
+
+****************************************************************************************************************************
+
+MyPanel7:
+
+gridBagLayout.columnWidths = new int[] {100, 100, 100};
+gridBagLayout.rowHeights = new int[] {100, 100, 100};
+
+Divide the panel into three columns with 100, 100, 100 pixel and divide the panel into three rows with 100, 100, 100 pixel
+
+NORTH_WEST, NONE, weightx = 1, weighty = 0, gridx = 0, gridy = 0
+
+place the button in north_west direction of (0,0)th cell, don't fill that cell. When resize the panel cell's width 
+will be increased to fill the panel's width(extra space). (weightx = 1)
+width of the cells in the same column are also resized according to that.
